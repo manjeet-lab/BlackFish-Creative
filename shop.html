@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop — BlackFish Creative</title>
+  <meta name="description" content="Shop the full BlackFish Creative collection. Premium dark streetwear, limited drops." />
+
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <nav class="navbar" role="navigation" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">
+      <img src="assets/logo1.png" alt="BlackFish Creative" />
+    </a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="shop.html" class="active">Shop</a></li>
+      <li><a href="product.html">Collection</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <a href="shop.html" class="nav-cta">Shop Now</a>
+
+    <!-- Theme Toggle: moon icon = dark mode, sun icon = light mode -->
+    <button class="theme-toggle" aria-label="Toggle light/dark mode">
+      <svg class="icon-moon" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+      <svg class="icon-sun" width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none;"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+    </button>
+
+    <button class="hamburger" aria-label="Toggle menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-menu">
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="product.html">Collection</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+  </div>
+
+  <!-- ============ PAGE HERO ============ -->
+  <div class="page-hero">
+    <p class="section-label">All Products</p>
+    <h1 class="page-hero-title">The Collection</h1>
+    <p class="page-hero-sub">Precision crafted for those who move in darkness. Every piece. Every drop.</p>
+  </div>
+
+  <!-- ============ SHOP SECTION ============ -->
+  <section class="shop-section">
+
+    <!-- Filter Buttons -->
+    <div class="shop-filters" role="group" aria-label="Product filters">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="tees">Tees</button>
+      <button class="filter-btn" data-filter="hoodies">Hoodies</button>
+      <button class="filter-btn" data-filter="outerwear">Outerwear</button>
+      <button class="filter-btn" data-filter="pants">Pants</button>
+      <button class="filter-btn" data-filter="accessories">Accessories</button>
+    </div>
+
+    <!-- Products Grid -->
+    <div class="shop-grid">
+
+      <!-- Tees -->
+      <a href="product.html" class="product-card" data-category="tees">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#1a1a1a,#0d0d0d);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <path d="M32 6 C32 6 10 16 10 32 C10 48 20 58 32 58 C44 58 54 48 54 32 C54 16 32 6 32 6Z" stroke="white" stroke-width="1.5" fill="none"/>
+              <circle cx="32" cy="32" r="7" stroke="white" stroke-width="1.5"/>
+            </svg>
+            <img src="https://res.cloudinary.com/did4ynt5s/image/upload/q_auto/f_auto/v1775045563/blackfish_printed_v2ntxp.jpg" alt="BlackFish Creative" />
+          </div>
+          <span class="product-badge">New</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">BlackFish Creative logo T-Shirt</h3>
+          <p class="product-sub">Fish Graphic Tee</p>
+          <p class="product-price">Rs.399</p>
+        </div>
+      </a>
+
+      <a href="product.html" class="product-card" data-category="tees">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#161616,#101010);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <rect x="14" y="7" width="36" height="50" rx="2" stroke="white" stroke-width="1.5"/>
+              <line x1="22" y1="20" x2="42" y2="20" stroke="white" stroke-width="1"/>
+              <line x1="22" y1="28" x2="42" y2="28" stroke="white" stroke-width="1"/>
+              <line x1="22" y1="36" x2="34" y2="36" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="product-badge">New</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Noir Long-Sleeve</h3>
+          <p class="product-sub">Pima Cotton Blend</p>
+          <p class="product-price">$75</p>
+        </div>
+      </a>
+
+      <a href="product.html" class="product-card" data-category="tees">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#131313,#1d1d1d);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <path d="M8 16 L18 8 L46 8 L56 16 L56 56 L8 56 Z" stroke="white" stroke-width="1.5" fill="none"/>
+              <path d="M18 8 L18 16 L8 16" stroke="white" stroke-width="1.5" fill="none"/>
+              <path d="M46 8 L46 16 L56 16" stroke="white" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <span class="product-badge">Limited</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Midnight Crop Tee</h3>
+          <p class="product-sub">Ribbed Cotton</p>
+          <p class="product-price">$55</p>
+        </div>
+      </a>
+
+      <!-- Hoodies -->
+      <a href="product.html" class="product-card" data-category="hoodies">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#141414,#1c1c1c);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <path d="M12 18 L20 8 L44 8 L52 18 L52 56 L12 56 Z" stroke="white" stroke-width="1.5" fill="none"/>
+              <path d="M20 8 Q32 14 44 8" stroke="white" stroke-width="1.5" fill="none"/>
+              <path d="M20 8 L12 18" stroke="white" stroke-width="1.5" fill="none"/>
+              <path d="M44 8 L52 18" stroke="white" stroke-width="1.5" fill="none"/>
+            </svg>
+          </div>
+          <span class="product-badge">Drop 01</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Void Hoodie</h3>
+          <p class="product-sub">French Terry Fleece</p>
+          <p class="product-price">$110</p>
+        </div>
+      </a>
+
+      <a href="product.html" class="product-card" data-category="hoodies">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#0f0f0f,#191919);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <rect x="8" y="16" width="48" height="40" rx="2" stroke="white" stroke-width="1.5"/>
+              <path d="M8 26 L8 16 Q32 8 56 16 L56 26" stroke="white" stroke-width="1.5" fill="none"/>
+              <line x1="8" y1="26" x2="56" y2="26" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="product-badge">Limited</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Deep Cut Sweatshirt</h3>
+          <p class="product-sub">14oz Loopback Fleece</p>
+          <p class="product-price">$95</p>
+        </div>
+      </a>
+
+      <!-- Outerwear -->
+      <a href="product.html" class="product-card" data-category="outerwear">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#121212,#1e1e1e);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <path d="M32 4 L54 24 L46 24 L46 60 L18 60 L18 24 L10 24 Z" stroke="white" stroke-width="1.5" fill="none"/>
+              <line x1="24" y1="38" x2="40" y2="38" stroke="white" stroke-width="1"/>
+              <line x1="24" y1="46" x2="40" y2="46" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="product-badge">Limited</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Phantom Bomber</h3>
+          <p class="product-sub">Shell Nylon</p>
+          <p class="product-price">$195</p>
+        </div>
+      </a>
+
+      <a href="product.html" class="product-card" data-category="outerwear">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#181818,#0e0e0e);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <rect x="6" y="12" width="52" height="48" rx="2" stroke="white" stroke-width="1.5"/>
+              <path d="M6 26 L6 12 L18 4 L32 12 L46 4 L58 12 L58 26" stroke="white" stroke-width="1.5" fill="none"/>
+              <line x1="32" y1="12" x2="32" y2="60" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Abyss Field Jacket</h3>
+          <p class="product-sub">Waxed Canvas</p>
+          <p class="product-price">$235</p>
+        </div>
+      </a>
+
+      <!-- Pants -->
+      <a href="product.html" class="product-card" data-category="pants">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#111111,#181818);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <rect x="9" y="22" width="46" height="34" rx="2" stroke="white" stroke-width="1.5"/>
+              <path d="M22 22 L22 12 L42 12 L42 22" stroke="white" stroke-width="1.5" fill="none"/>
+              <rect x="14" y="28" width="12" height="8" rx="1" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="product-badge">Limited</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Abyss Cargo Pants</h3>
+          <p class="product-sub">Ripstop Nylon</p>
+          <p class="product-price">$145</p>
+        </div>
+      </a>
+
+      <a href="product.html" class="product-card" data-category="pants">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#101010,#1a1a1a);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <path d="M10 10 L54 10 L54 54 L10 54 Z" stroke="white" stroke-width="1.5" fill="none"/>
+              <line x1="10" y1="24" x2="54" y2="24" stroke="white" stroke-width="1"/>
+              <line x1="32" y1="24" x2="32" y2="54" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Dark Matter Sweats</h3>
+          <p class="product-sub">Heavyweight Fleece</p>
+          <p class="product-price">$85</p>
+        </div>
+      </a>
+
+      <!-- Accessories -->
+      <a href="product.html" class="product-card" data-category="accessories">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#0f0f0f,#1a1a1a);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <path d="M6 32 Q32 8 58 32" stroke="white" stroke-width="1.5" fill="none"/>
+              <path d="M6 32 L6 46 Q6 50 10 50 L54 50 Q58 50 58 46 L58 32" stroke="white" stroke-width="1.5" fill="none"/>
+              <line x1="6" y1="32" x2="58" y2="32" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Eclipse Cap</h3>
+          <p class="product-sub">6-Panel Structured</p>
+          <p class="product-price">$45</p>
+        </div>
+      </a>
+
+      <a href="product.html" class="product-card" data-category="accessories">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#151515,#0b0b0b);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <rect x="14" y="18" width="36" height="28" rx="14" stroke="white" stroke-width="1.5"/>
+              <path d="M26 18 Q32 10 38 18" stroke="white" stroke-width="1.5" fill="none"/>
+              <circle cx="32" cy="32" r="4" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Shadow Beanie</h3>
+          <p class="product-sub">Merino Wool Blend</p>
+          <p class="product-price">$38</p>
+        </div>
+      </a>
+
+      <a href="product.html" class="product-card" data-category="accessories">
+        <div class="product-card-image">
+          <div style="width:100%;height:100%;background:linear-gradient(155deg,#111,#1b1b1b);display:flex;align-items:center;justify-content:center;">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" style="opacity:0.18;">
+              <rect x="10" y="18" width="44" height="28" rx="4" stroke="white" stroke-width="1.5"/>
+              <line x1="10" y1="30" x2="54" y2="30" stroke="white" stroke-width="1"/>
+              <circle cx="22" cy="24" r="3" stroke="white" stroke-width="1"/>
+            </svg>
+          </div>
+          <span class="product-badge">New</span>
+          <div class="product-overlay"><div class="overlay-btn">Quick View</div></div>
+        </div>
+        <div class="product-card-info">
+          <h3 class="product-name">Void Wallet</h3>
+          <p class="product-sub">Full-Grain Leather</p>
+          <p class="product-price">$65</p>
+        </div>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <img src="assets/logo.jpg" alt="BlackFish Creative" />
+        <p>Premium dark aesthetic streetwear for those who create in the dark. Limited drops. Infinite vision.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="shop.html">New Arrivals</a></li>
+          <li><a href="shop.html">Tees</a></li>
+          <li><a href="shop.html">Hoodies</a></li>
+          <li><a href="shop.html">Outerwear</a></li>
+          <li><a href="shop.html">Accessories</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Stockists</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Help</h4>
+        <ul>
+          <li><a href="#">Sizing Guide</a></li>
+          <li><a href="#">Shipping</a></li>
+          <li><a href="#">Returns</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p class="footer-copy">&copy; 2024 BlackFish Creative. All rights reserved.</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/blackfishcreative/" aria-label="Instagram">Instagram</a>
+        <a href="mailto:blackfish.creative@yahoo.com" aria-label="Mail">Mail</a>
+        <a href="https://www.linkedin.com/" aria-label="LinkedIn">LinkedIn</a>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" aria-label="Back to top">&#8593;</button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
